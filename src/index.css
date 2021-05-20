@@ -31,10 +31,11 @@ body {
     position: relative;
 }
 
-.day-icon {
+.moon-icon {
     width: 30px;
     position: absolute;
     right: 0px;
+    cursor: pointer;
 }
 
 input {
@@ -48,11 +49,6 @@ input {
     text-align: center;
     background: #77acf1b0;
     font-weight: 550;
-}
-
-h3 {
-    margin-left: 1rem;
-    padding: 0px;
 }
 
 ul {
@@ -71,4 +67,10 @@ li {
     height: 1rem;
     border-radius: 50%;
     background: black;
+}
+
+@media (max-width: 900px) {
+    .container {
+        width: 80%;
+    }
 }

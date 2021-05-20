@@ -13,9 +13,10 @@ export const AddCategory = ({setCategories}) => {
 
         if (inputValue.trim().length > 2) {
             setCategories(cats => [...cats, inputValue])
+            setInputValue('')
         }
     }
-
+    
     return (
         <form onSubmit={handleSubmit}>
             <input

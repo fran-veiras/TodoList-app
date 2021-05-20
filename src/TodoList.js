@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { AddCategory } from './Components/AddCategory';
-import { CheckBox } from './Components/CheckBox';
-import dayIcon from './img/day.png';
+import { CheckBox } from './Components/CheckBox/CheckBox';
+import dayIcon from './img/moon.png';
 
 export const TodoList = () => {
 
@@ -18,9 +18,6 @@ export const TodoList = () => {
         li: {
             borderBottom: "1px solid rgb(221, 221, 221)",
         },
-        title: {
-            display: "inline",
-        }
     };
 
     return (
@@ -28,19 +25,10 @@ export const TodoList = () => {
             <div className="back-image-day"></div>
             <div className="container">
                 <h1>TODO</h1>
-                <img className="day-icon" src={dayIcon}/>
+                <img className="moon-icon" src={dayIcon}/>
                 <AddCategory setCategories={setCategories}/>
                 <div style={styles.todo}>
-                {
-                    categories.map(category => (
-                        <ul style={styles.li}>
-                            <li>
-                                <CheckBox/>
-                                <h3 style={styles.title}>{category}</h3>
-                            </li>
-                        </ul>
-                    ))
-                }
+                <CheckBox categories={categories}/>
             </div>
             </div>
         </>
