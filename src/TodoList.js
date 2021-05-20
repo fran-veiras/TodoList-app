@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { AddCategory } from './Components/AddCategory';
 import { CheckBox } from './Components/CheckBox/CheckBox';
-import dayIcon from './img/moon.png';
+import { NightMode } from './Components/NightMode/NightMode';
 
 export const TodoList = () => {
 
@@ -25,7 +25,7 @@ export const TodoList = () => {
             <div className="back-image-day"></div>
             <div className="container">
                 <h1>TODO</h1>
-                <img className="moon-icon" src={dayIcon}/>
+                <NightMode />
                 <AddCategory setCategories={setCategories}/>
                 <div style={styles.todo}>
                 <CheckBox categories={categories}/>

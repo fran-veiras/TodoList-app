@@ -1,12 +1,13 @@
 import React, {useState} from 'react'
-import {TextStyle, CheckStyle} from './CheckBox/CheckStyle'
+import {TextStyle,
+        CheckStyle,
+        CrossTask,
+        Ul
+        } 
+        from './CheckBox/CheckStyle';
+import Cross from '../img/cross.png';
 
 export const TaskCompleted = ({categories, inputValue}) => {
-    const styles = `
-        li: {
-            borderBottom: "1px solid rgb(221, 221, 221)",
-        },
-    `
     
     const [ isCheck, setIsCheck ] = useState(false);
 
@@ -14,14 +15,36 @@ export const TaskCompleted = ({categories, inputValue}) => {
         setIsCheck(!isCheck)
     }
 
+    const [ isNotDelete, setIsDelete ] = useState(false);
+
+    const deleteTask = () => {
+        setIsDelete(!isNotDelete)
+        
+    }
+
     return (
         <>
-            <ul style={styles.li}>
+            <Ul isNotDelete={isNotDelete}>
                 <li key={inputValue}>
-                    <CheckStyle isCheck={isCheck} onClick={toggler}></CheckStyle>
-                    <TextStyle isCheck={isCheck} toggler={toggler}>{categories}</TextStyle>
+                    <CheckStyle 
+                        isCheck={isCheck} 
+                        onClick={toggler}
+                    >
+                    </CheckStyle>
+                    <TextStyle 
+                        isCheck={isCheck} 
+                        toggler={toggler}
+                    >
+                        {categories}
+                    </TextStyle>
+                    <CrossTask
+                        isNotDelete={isNotDelete} 
+                        onClick={deleteTask} 
+                        src={Cross}
+                    >
+                    </CrossTask>
                 </li>
-            </ul>
+            </Ul>
         </>
     )
 }

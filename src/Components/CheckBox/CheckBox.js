@@ -3,7 +3,6 @@ import { TaskCompleted } from '../TaskCompleted';
 
 export const CheckBox = ({categories}) => {
 
-
     return (
         <>
         {

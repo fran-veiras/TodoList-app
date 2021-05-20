@@ -17,3 +17,15 @@ export const TextStyle = styled.h3`
     padding: 0px;
     display: inline;
 `
+
+export const CrossTask = styled.img`
+    width: 1.5rem;
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+`
+
+export const Ul = styled.ul`
+    border-bottom: 1px solid rgb(221, 221, 221);
+    display: ${({ isNotDelete }) => (isNotDelete ? 'none' : 'block')};
+`

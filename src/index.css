@@ -31,13 +31,6 @@ body {
     position: relative;
 }
 
-.moon-icon {
-    width: 30px;
-    position: absolute;
-    right: 0px;
-    cursor: pointer;
-}
-
 input {
     width: 99%;
     height: 50px;
