@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/TodoList-app/static/css/main.5f59dd45.chunk.css",
+    "main.js": "/TodoList-app/static/js/main.ce17c9d8.chunk.js",
+    "main.js.map": "/TodoList-app/static/js/main.ce17c9d8.chunk.js.map",
+    "runtime-main.js": "/TodoList-app/static/js/runtime-main.49794afd.js",
+    "runtime-main.js.map": "/TodoList-app/static/js/runtime-main.49794afd.js.map",
+    "static/js/2.c9c99eb5.chunk.js": "/TodoList-app/static/js/2.c9c99eb5.chunk.js",
+    "static/js/2.c9c99eb5.chunk.js.map": "/TodoList-app/static/js/2.c9c99eb5.chunk.js.map",
+    "index.html": "/TodoList-app/index.html",
+    "static/css/main.5f59dd45.chunk.css.map": "/TodoList-app/static/css/main.5f59dd45.chunk.css.map",
+    "static/js/2.c9c99eb5.chunk.js.LICENSE.txt": "/TodoList-app/static/js/2.c9c99eb5.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/TodoList-app/static/media/rohit-tandon-9wg5jCEPBsw-unsplash.1172d4df.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.49794afd.js",
+    "static/js/2.c9c99eb5.chunk.js",
+    "static/css/main.5f59dd45.chunk.css",
+    "static/js/main.ce17c9d8.chunk.js"
+  ]
+}
